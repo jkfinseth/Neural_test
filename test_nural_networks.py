@@ -1,3 +1,4 @@
+#Import required libraries
 import numpy as np
 import mnist
 import matplotlib.pyplot as plt
