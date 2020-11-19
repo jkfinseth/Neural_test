@@ -45,12 +45,9 @@ model.fit(
     )
 
 #Evaluate the model
-model.evaluate(
+test_loss, test_acc = model.evaluate(
     test_images,
     to_categorical(test_labels)
     )
 
-predictions = model.predict(test_images[:5])
-#print our models prediction
-print(np.argmax(predictions, axis = 1))
-print(test_labels[:5])
+print ("\nTest accuracy: " + str(test_acc))
